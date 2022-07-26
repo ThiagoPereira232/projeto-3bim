@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float runSpeed;
 
-    private bool _isRunning;
     private float initialSpeed;
 
     private Rigidbody2D rig;
@@ -15,7 +14,6 @@ public class Player : MonoBehaviour
     private Vector2 _direction;
 
     public Vector2 Direction { get => _direction; set => _direction = value; }
-    public bool IsRunning { get => _isRunning; set => _isRunning = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +34,8 @@ public class Player : MonoBehaviour
         OnMove();
     }
 
+    #region Movement
+
     void OnInput()
     {
         _direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -51,12 +51,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = runSpeed;
-            _isRunning = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = initialSpeed;
-            _isRunning = false;
         }
     }
+
+    #endregion
 }
