@@ -9,11 +9,14 @@ public class Player : MonoBehaviour
 
     private float initialSpeed;
 
+    private bool _isRunning;
+
     private Rigidbody2D rig;
 
     private Vector2 _direction;
 
     public Vector2 Direction { get => _direction; set => _direction = value; }
+    public bool IsRunning { get => _isRunning; set => _isRunning = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -51,10 +54,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = runSpeed;
+            IsRunning = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = initialSpeed;
+            IsRunning = false;
         }
     }
 
