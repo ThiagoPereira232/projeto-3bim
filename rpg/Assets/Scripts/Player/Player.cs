@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float runSpeed;
+    [SerializeField] private bool isTopdown;
 
     private float initialSpeed;
 
@@ -28,7 +29,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        OnInput();
+        if (isTopdown) OnInputTopDown();
+        else OnInput();
         OnRun();
     }
 
@@ -39,9 +41,14 @@ public class Player : MonoBehaviour
 
     #region Movement
 
-    void OnInput()
+    void OnInputTopDown()
     {
         _direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+    }
+
+    void OnInput()
+    {
+        _direction = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
     }
 
     void OnMove()
@@ -54,12 +61,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = runSpeed;
-            IsRunning = true;
+            _isRunning = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = initialSpeed;
-            IsRunning = false;
+            _isRunning = false;
         }
     }
 
