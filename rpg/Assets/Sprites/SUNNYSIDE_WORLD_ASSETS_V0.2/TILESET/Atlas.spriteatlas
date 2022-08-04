@@ -45,11 +45,38 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: c2a079a4cf8b17b49b35fbc9ea677f08, type: 3}
+    - {fileID: 2800000, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 227455090, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 2076417675, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 417950094, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -1388144601, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -1559264970, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -942311692, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 136150985, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -34926548, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -404309034, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 2049344164, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -1545519351, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 1245218107, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 1671589549, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -454302518, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -394263231, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 1366293436, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 1237402421, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 2033292080, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -1954544964, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -1923509383, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 1184081473, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 1045230439, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 1500797548, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: 1519806016, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -156001321, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
+  - {fileID: -1108277018, guid: 0ce2de445054d694c87f00b4dbcaeb81, type: 3}
   - {fileID: -1185200693, guid: c2a079a4cf8b17b49b35fbc9ea677f08, type: 3}
   - {fileID: 40320802, guid: c2a079a4cf8b17b49b35fbc9ea677f08, type: 3}
   - {fileID: -1627092890, guid: c2a079a4cf8b17b49b35fbc9ea677f08, type: 3}
@@ -469,6 +496,32 @@ SpriteAtlas:
   - {fileID: 1320613309, guid: c2a079a4cf8b17b49b35fbc9ea677f08, type: 3}
   - {fileID: 1353247248, guid: c2a079a4cf8b17b49b35fbc9ea677f08, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Houses_props_11
+  - Houses_props_10
+  - Houses_props_13
+  - Houses_props_12
+  - Houses_props_15
+  - Houses_props_14
+  - Houses_props_17
+  - Houses_props_16
+  - Houses_props_19
+  - Houses_props_18
+  - Houses_props_8
+  - Houses_props_9
+  - Houses_props_2
+  - Houses_props_3
+  - Houses_props_0
+  - Houses_props_1
+  - Houses_props_6
+  - Houses_props_7
+  - Houses_props_4
+  - Houses_props_5
+  - Houses_props_20
+  - Houses_props_21
+  - Houses_props_22
+  - Houses_props_23
+  - Houses_props_24
+  - Houses_props_25
   - SunnysideWorld_Tileset_V0.1_1
   - SunnysideWorld_Tileset_V0.1_320
   - SunnysideWorld_Tileset_V0.1_336
