@@ -28,6 +28,8 @@ public class NextScene : MonoBehaviour
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
+        yield return SceneManager.LoadSceneAsync("Loading");
+        yield return new WaitForSeconds(2.6f);
         yield return SceneManager.LoadSceneAsync(sceneName);
 
         FindObjects();
