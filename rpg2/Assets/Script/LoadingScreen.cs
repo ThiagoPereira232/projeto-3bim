@@ -9,7 +9,9 @@ public class LoadingScreen : MonoBehaviour
     string[] sentences = {
         "Se você levar um dano você perde vida", 
         "Se sua vida chegar a 0 você morre",
-        
+        "Atacar o inimigo causa mais dano do que não atacar",
+        "Inimigos atacam você, eles querem te matar mesmo",
+        "Pegue corações para se curar"
     };
     public Text text;
 
