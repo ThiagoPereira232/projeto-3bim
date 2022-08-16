@@ -1597,7 +1597,7 @@ Transform:
   - {fileID: 382715211}
   - {fileID: 1827963032}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &616553452 stripped
 Transform:
@@ -34382,21 +34382,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2973535665642232944, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2973535665642232944, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2973535665642232947, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2973535665642232949, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2973535665642232949, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2973535665642232958, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2973535665642232958, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2973535665642232958, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2973535665642232958, guid: e3b47d4bfe96ce041b6e1b928c524918, type: 3}
       propertyPath: m_LocalScale.z
