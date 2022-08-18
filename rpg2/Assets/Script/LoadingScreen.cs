@@ -11,7 +11,9 @@ public class LoadingScreen : MonoBehaviour
         "Se sua vida chegar a 0 você morre",
         "Atacar o inimigo causa mais dano do que não atacar",
         "Inimigos atacam você, eles querem te matar mesmo",
-        "Pegue corações para se curar"
+        "Pegue corações para se curar",
+        "Espadas são afiadas, elas cortam",
+        "Sua armadura é de metal, se fosse de borracha seria armamole"
     };
     public Text text;
 
