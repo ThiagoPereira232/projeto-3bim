@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private float initialSpeed;
 
     private bool _isRunning;
+    private bool _canWalk;
 
     private Rigidbody2D rig;
 
@@ -18,12 +19,14 @@ public class Player : MonoBehaviour
 
     public Vector2 Direction { get => _direction; set => _direction = value; }
     public bool IsRunning { get => _isRunning; set => _isRunning = value; }
+    public bool CanWalk { get => _canWalk; set => _canWalk = value; }
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         initialSpeed = speed;
+        _canWalk = true;
     }
 
     // Update is called once per frame
@@ -53,7 +56,10 @@ public class Player : MonoBehaviour
 
     void OnMove()
     {
-        rig.MovePosition(rig.position + _direction * speed * Time.fixedDeltaTime);
+        if (_canWalk)
+        {
+            rig.MovePosition(rig.position + _direction * speed * Time.fixedDeltaTime);
+        }
     }
 
     void OnRun()

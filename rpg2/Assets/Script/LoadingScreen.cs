@@ -13,7 +13,9 @@ public class LoadingScreen : MonoBehaviour
         "Inimigos atacam você, eles querem te matar mesmo",
         "Pegue corações para se curar",
         "Espadas são afiadas, elas cortam",
-        "Sua armadura é de metal, se fosse de borracha seria armamole"
+        "Sua armadura é de metal, se fosse de borracha seria armamole",
+        "CUIDADO!!! O inimigo dá dano",
+        "Se você morrer você estara morto"
     };
     public Text text;
 
