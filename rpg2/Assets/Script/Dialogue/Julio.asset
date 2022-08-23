@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b63d523c865e64386ab7514aeb53b1, type: 3}
+  m_Name: Julio
+  m_EditorClassIdentifier: 
+  actor: {fileID: 1600432677363065318, guid: e2a9992d001030841907de6604331426, type: 3}
+  speakerSprite: {fileID: 0}
+  sentence: 
+  dialogues:
+  - actorName: "J\xFAlio"
+    profile: {fileID: 21300000, guid: c065a30a98b728d45bd40d8f08194b9f, type: 3}
+    sentence:
+      portuguese: Queria saber nadar!
