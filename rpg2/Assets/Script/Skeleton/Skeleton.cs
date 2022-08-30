@@ -21,23 +21,30 @@ public class Skeleton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(player.transform.position);    
+        agent.SetDestination(player.transform.position);
+        AnimationsSkeleton();
 
-        if(Vector2.Distance(transform.position, player.transform.position) <= agent.stoppingDistance)
+
+    }
+
+    void AnimationsSkeleton()
+    {
+        if (Vector2.Distance(transform.position, player.transform.position) <= agent.stoppingDistance)
         {
             // chegou no limite da distancia
             animControl.PlayAnim(2);
-        } else
+        }
+        else
         {
             // skeleton segue o player
             animControl.PlayAnim(1);
         }
 
         float posX = player.transform.position.x - transform.position.x;
-        if(posX > 0)
+        if (posX > 0)
         {
             transform.eulerAngles = new Vector2(0, 0);
-        } 
+        }
         else
         {
             transform.eulerAngles = new Vector2(0, 180);

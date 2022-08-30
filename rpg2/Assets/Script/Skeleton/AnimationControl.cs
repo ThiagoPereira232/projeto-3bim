@@ -28,6 +28,7 @@ public class AnimationControl : MonoBehaviour
         if(hit != null)
         {
             Debug.Log("desceu a porrada");
+            GameController.instance.life--;
         } else
         {
 
