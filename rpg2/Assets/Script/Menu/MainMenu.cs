@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject tutorial;
-    public GameObject credits;
     public GameObject mainMenu;
     public Dropdown dropdown;
 
@@ -27,14 +26,13 @@ public class MainMenu : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Village");
+        SceneManager.LoadScene("Casinha");
     }
 
     public void LoadTutorial()
     {
         Time.timeScale = 1f;
         tutorial.SetActive(true);
-        credits.SetActive(false);
         mainMenu.SetActive(false);
     }
 
@@ -42,7 +40,6 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         tutorial.SetActive(false);
-        credits.SetActive(true);
         mainMenu.SetActive(false);
     }
 
@@ -50,7 +47,6 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         tutorial.SetActive(false);
-        credits.SetActive(false);
         mainMenu.SetActive(true);
     }
 
