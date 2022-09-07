@@ -9,11 +9,13 @@ public class AnimationControl : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
 
     private Animator anim;
+    private PlayerAnim player;
 
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        player = FindObjectOfType<PlayerAnim>();
     }
 
     public void PlayAnim(int value)
@@ -29,6 +31,7 @@ public class AnimationControl : MonoBehaviour
         {
             Debug.Log("desceu a porrada");
             GameController.instance.life--;
+            player.OnHit();
         } else
         {
 
