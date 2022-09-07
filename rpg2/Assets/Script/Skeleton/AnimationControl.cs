@@ -8,6 +8,7 @@ public class AnimationControl : MonoBehaviour
     [SerializeField] private float radius;
     [SerializeField] private LayerMask playerLayer;
 
+    private Skeleton skeleton;
     private Animator anim;
     private PlayerAnim player;
 
@@ -16,6 +17,7 @@ public class AnimationControl : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         player = FindObjectOfType<PlayerAnim>();
+        skeleton = GetComponentInParent<Skeleton>();
     }
 
     public void PlayAnim(int value)
@@ -25,16 +27,34 @@ public class AnimationControl : MonoBehaviour
 
     public void Attack()
     {
-        Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, radius, playerLayer);
-
-        if(hit != null)
+        if (!skeleton.isDead)
         {
-            Debug.Log("desceu a porrada");
-            GameController.instance.life--;
-            player.OnHit();
+            Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, radius, playerLayer);
+
+            if(hit != null)
+            {
+                Debug.Log("desceu a porrada");
+                GameController.instance.life--;
+                player.OnHit();
+            }
+        }
+    }
+
+    public void OnHit()
+    {
+
+        if(skeleton.currentHealth <= 0)
+        {
+            skeleton.isDead = true;
+            anim.SetTrigger("death");
+
+            Destroy(skeleton.gameObject, 1f);
         } else
         {
+            anim.SetTrigger("hit");
+            skeleton.currentHealth--;
 
+            skeleton.healthBar.fillAmount = skeleton.currentHealth / skeleton.totalHealth;
         }
     }
 

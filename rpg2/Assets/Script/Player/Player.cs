@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
 
     private float initialSpeed;
 
-    private bool _isRunning;
+    private bool _isRunning;  
+    private bool _isAttack;  
     private bool _canWalk;
 
     private Rigidbody2D rig;
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     public Vector2 Direction { get => _direction; set => _direction = value; }
     public bool IsRunning { get => _isRunning; set => _isRunning = value; }
     public bool CanWalk { get => _canWalk; set => _canWalk = value; }
+    public bool IsAttack { get => _isAttack; set => _isAttack = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour
         if (isTopdown) OnInputTopDown();
         else OnInput();
         OnRun();
+        OnAttack();
     }
 
     private void FixedUpdate()
@@ -43,6 +46,21 @@ public class Player : MonoBehaviour
     }
 
     #region Movement
+
+    void OnAttack()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            _isAttack = true;
+            speed = 0f;
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            IsAttack = false;
+            speed = initialSpeed;
+        }
+    }
 
     void OnInputTopDown()
     {

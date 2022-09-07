@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerAnim : MonoBehaviour
 {
+    [Header("Attack settings")]
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private float radius;
+    [SerializeField] private LayerMask enemyLayer;
 
     private Player player;
     private Animator anim;
@@ -24,6 +28,7 @@ public class PlayerAnim : MonoBehaviour
     {
         OnMove();
         OnRun();
+        OnAttackAnim();
 
         if (isHitting)
         {
@@ -83,5 +88,31 @@ public class PlayerAnim : MonoBehaviour
             isHitting = true;
         }
     }
+    #endregion
+
+    #region Attack
+
+    void OnAttackAnim()
+    {
+        if (player.IsAttack)
+        {
+            anim.SetInteger("transition", 4);
+        }
+    }
+
+    public void OnAttack()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, radius, enemyLayer);
+        if(hit != null)
+        {
+            hit.GetComponentInChildren<AnimationControl>().OnHit();
+        }
+    }
+    public void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, radius);
+    }
+
+
     #endregion
 }

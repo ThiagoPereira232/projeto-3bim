@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Skeleton : MonoBehaviour
 {
@@ -10,9 +11,15 @@ public class Skeleton : MonoBehaviour
 
     private Player player;
 
+    public float currentHealth;
+    public Image healthBar;
+    public float totalHealth;
+    public bool isDead;
+
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = totalHealth;
         player = FindObjectOfType<Player>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -21,8 +28,12 @@ public class Skeleton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(player.transform.position);
-        AnimationsSkeleton();
+        if (!isDead)
+        {
+            agent.SetDestination(player.transform.position);
+            AnimationsSkeleton();
+
+        }
 
 
     }
