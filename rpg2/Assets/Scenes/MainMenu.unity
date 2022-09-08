@@ -624,7 +624,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nome do jogo
+  m_Text: The Castle
 --- !u!222 &481652320
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Colocar o nome do jogo
+  m_Text: THE CASTLE
 --- !u!222 &1137482405
 CanvasRenderer:
   m_ObjectHideFlags: 0

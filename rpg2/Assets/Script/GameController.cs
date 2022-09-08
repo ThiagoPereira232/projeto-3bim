@@ -63,7 +63,6 @@ public class GameController : MonoBehaviour
         if(life == 0)
         {
             deadMenuUI.SetActive(true);
-            Time.timeScale = 0f;
         }
     }
 }

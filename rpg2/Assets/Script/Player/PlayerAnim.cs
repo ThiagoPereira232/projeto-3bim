@@ -40,6 +40,14 @@ public class PlayerAnim : MonoBehaviour
                 timeCount = 0f;
             }
         }
+
+        if (FindObjectOfType<GameController>().life <= 0) {
+            anim.SetTrigger("death");
+            player.Speed = 0;
+            new WaitForSeconds(2);
+            Time.timeScale = 0f;
+
+        }
     }
 
     #region Movement

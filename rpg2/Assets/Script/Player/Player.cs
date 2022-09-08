@@ -22,12 +22,13 @@ public class Player : MonoBehaviour
     public bool IsRunning { get => _isRunning; set => _isRunning = value; }
     public bool CanWalk { get => _canWalk; set => _canWalk = value; }
     public bool IsAttack { get => _isAttack; set => _isAttack = value; }
+    public float Speed { get => speed; set => speed = value; }
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
-        initialSpeed = speed;
+        initialSpeed = Speed;
         _canWalk = true;
     }
 
@@ -52,13 +53,13 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             _isAttack = true;
-            speed = 0f;
+            Speed = 0f;
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             IsAttack = false;
-            speed = initialSpeed;
+            Speed = initialSpeed;
         }
     }
 
@@ -76,7 +77,7 @@ public class Player : MonoBehaviour
     {
         if (_canWalk)
         {
-            rig.MovePosition(rig.position + _direction * speed * Time.fixedDeltaTime);
+            rig.MovePosition(rig.position + _direction * Speed * Time.fixedDeltaTime);
         }
     }
 
@@ -84,12 +85,12 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = runSpeed;
+            Speed = runSpeed;
             _isRunning = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = initialSpeed;
+            Speed = initialSpeed;
             _isRunning = false;
         }
     }
