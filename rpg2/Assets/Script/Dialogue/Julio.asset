@@ -17,6 +17,6 @@ MonoBehaviour:
   sentence: 
   dialogues:
   - actorName: "J\xFAlio"
-    profile: {fileID: 21300000, guid: c065a30a98b728d45bd40d8f08194b9f, type: 3}
+    profile: {fileID: 21300000, guid: 04ff86911836b3b4583ad59da0bcad04, type: 3}
     sentence:
       portuguese: Queria saber nadar!

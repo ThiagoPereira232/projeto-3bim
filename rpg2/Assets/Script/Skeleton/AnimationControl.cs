@@ -34,7 +34,8 @@ public class AnimationControl : MonoBehaviour
             if(hit != null)
             {
                 Debug.Log("desceu a porrada");
-                GameController.instance.life--;
+                Debug.Log(GameController.instance.life);
+                FindObjectOfType<GameController>().life--;
                 player.OnHit();
             }
         }

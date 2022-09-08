@@ -17,18 +17,18 @@ MonoBehaviour:
   sentence: 
   dialogues:
   - actorName: Oskar Aglio
-    profile: {fileID: 21300000, guid: c065a30a98b728d45bd40d8f08194b9f, type: 3}
+    profile: {fileID: 21300000, guid: 6a49eeb3cdde4734681bc076820272bf, type: 3}
     sentence:
       portuguese: Bom dia!
   - actorName: "Voc\xEA"
-    profile: {fileID: 21300000, guid: a8c2f80a84f0ead4185b5f00a3e565eb, type: 3}
+    profile: {fileID: 21300000, guid: 91e0e11c916ff1545953475962f9dfd1, type: 3}
     sentence:
       portuguese: Bom dia!
   - actorName: Oskar Aglio
-    profile: {fileID: 21300000, guid: c065a30a98b728d45bd40d8f08194b9f, type: 3}
+    profile: {fileID: 21300000, guid: 6a49eeb3cdde4734681bc076820272bf, type: 3}
     sentence:
       portuguese: "Agrade\xE7o a sua estadia"
-  - actorName: 
-    profile: {fileID: 6750947459597745425, guid: ebf528d90ee698644b1d47e20b7e7bde, type: 3}
+  - actorName: "Voc\xEA"
+    profile: {fileID: 21300000, guid: 91e0e11c916ff1545953475962f9dfd1, type: 3}
     sentence:
       portuguese: Obrigado
