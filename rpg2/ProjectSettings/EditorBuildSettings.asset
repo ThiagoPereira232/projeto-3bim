@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Guarda.unity
     guid: c6f6872b2c406c84190dd592c983599e
+  - enabled: 1
+    path: Assets/Scenes/Castle.unity
+    guid: 8728b208054f7f3439fda28ca1bea544
   m_configObjects: {}

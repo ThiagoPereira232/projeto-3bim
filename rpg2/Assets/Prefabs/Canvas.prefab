@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca71add803cd30408fde5a78640abb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deadMenuUI: {fileID: 796326361}
 --- !u!1 &975812930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2fadd197b173c4489d1b47a3ccb0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tag: Canvas
 --- !u!1 &8095508663461926691
 GameObject:
   m_ObjectHideFlags: 0

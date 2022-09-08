@@ -36,7 +36,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         if (isTopdown) OnInputTopDown();
-        else OnInput();
+        else
+        {
+            OnInput();
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+            rig.AddForce(new Vector2(0, 10), ForceMode2D.Impulse);
         OnRun();
         OnAttack();
     }
@@ -72,6 +77,8 @@ public class Player : MonoBehaviour
     {
         _direction = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
     }
+
+
 
     void OnMove()
     {

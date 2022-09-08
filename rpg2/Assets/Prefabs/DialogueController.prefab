@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8173878821372495472}
   - component: {fileID: 8173878821372495487}
+  - component: {fileID: 4684088253210279459}
   m_Layer: 0
   m_Name: DialogueController
   m_TagString: Untagged
@@ -49,3 +50,15 @@ MonoBehaviour:
   speechText: {fileID: 0}
   actorNameText: {fileID: 0}
   typingSpeed: 0.05
+--- !u!114 &4684088253210279459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173878821372495486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2fadd197b173c4489d1b47a3ccb0cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
