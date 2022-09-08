@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Casinha.unity
     guid: 4ffc3c62a96874240bcc17626fbac8eb
+  - enabled: 1
+    path: Assets/Scenes/Guarda.unity
+    guid: c6f6872b2c406c84190dd592c983599e
   m_configObjects: {}
