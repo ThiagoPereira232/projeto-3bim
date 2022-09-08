@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
     public Sprite health5_6;
 
     public Image canvasLife;
+    public GameObject deadMenuUI;
+
 
     private void Awake()
     {
@@ -60,7 +62,8 @@ public class GameController : MonoBehaviour
 
         if(life == 0)
         {
-            Debug.Log("morreu");
+            deadMenuUI.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 }

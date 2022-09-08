@@ -12,7 +12,7 @@ public class PlayerAnim : MonoBehaviour
     private Player player;
     private Animator anim;
 
-    private bool isHitting;
+    public bool isHitting;
     private float recoveryTime = 1.5f;
     private float timeCount;
 
@@ -85,6 +85,7 @@ public class PlayerAnim : MonoBehaviour
         if (!isHitting)
         {
             anim.SetTrigger("hit");
+            FindObjectOfType<GameController>().life--;
             isHitting = true;
         }
     }
