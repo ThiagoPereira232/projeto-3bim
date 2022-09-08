@@ -7,7 +7,7 @@ public class Spawn : MonoBehaviour
     [SerializeField]
     private GameObject enemyPrefab;
     [SerializeField]
-    private float enemyInterval = 4f;
+    private float enemyInterval = 8f;
 
     // Start is called before the first frame update
     void Start()
